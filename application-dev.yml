@@ -1,1 +1,6 @@
-luccky-word: hello
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql//localhost:3306/datasync-server
+    username: sa
+    password: 123456
