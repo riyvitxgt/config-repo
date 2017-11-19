@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/datasync_server
+    url: jdbc:mysql://localhost:3306/datasync_server_dev
     username: sa
     password: 123456
     druid:
