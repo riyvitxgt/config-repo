@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql//localhost:3306/datasync-server
-    username: sa
-    password: 123456
+    url: jdbc:mysql://localhost:3306/datasync-server
+    username: root
+    password: ri1yvi2txgt6
     druid:
       #配置初始化大小,最小,最大
       initial-size: 20
@@ -23,4 +23,10 @@ spring:
       remove-abandoned-timeout: 1800
       log-abandoned: false
       filters: stat
-      enable: false
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
